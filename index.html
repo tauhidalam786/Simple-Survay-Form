@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survay Form</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    
+    <main>
+        <h1>Feedback Survay Form</h1>
+        <form id="survay-form">
+            <lable for="name">Name:</lable>
+            <input type="text" id="name" name="name"
+            required>
+            <lable for="email">Email:</lable>
+            <input type="email" id="email" name="email" required>
+            <lable for="age">Age:</lable>
+            <input type="age" id="age" name="age" min="1" max="150"
+            required>  
+            <lable for="feedback-type">Type of feedback</lable>
+            <select id="feedback-type" name="feedback-type">
+                <option value="positive">Positive</option>
+                <option value="neagtive">Negative</option>
+                <option value="suggestion">Suggestion</option>
+            </select> 
+            <fieldset>
+                <legend>Services Used:</legend>
+                <input type="checkbox" id="services1" name="services"
+                value="services1">
+                <lable for="services1">Services 1</lable> <br/>
+                <input type="checkbox" id="services2" name="services"
+                value="services2">
+                <lable for="services2">Services 2</lable> <br/>
+                <input type="checkbox" id="services3" name="services"
+                value="services3">
+                <lable for="services3">Services 3</lable> <br/>
+            </fieldset>
+            <lable for="comments">Additional comments:</lable>
+            <textarea id="comments" name="comments" row="4"></textarea>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </main>
+</body>
+</html>
